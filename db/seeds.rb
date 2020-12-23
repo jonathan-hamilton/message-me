@@ -11,3 +11,8 @@ User.create(username: "Vanessa", password: "123")
 User.create(username: "Jack", password: "123")
 User.create(username: "Alexa", password: "123")
 User.create(username: "Kayla", password: "123")
+
+Message.create(body: "Hi I'm a new message", user: User.last)
+Message.create(body: "Hi I'm the second message", user: User.first)
+Message.create(body: "Hi I'm a third message", user: User.last)
+Message.create(body: "Hi I'm a fourth message", user: User.first)
